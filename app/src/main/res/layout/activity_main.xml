@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <NumberPicker
+        android:id="@+id/numberpicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"></NumberPicker>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="번호추가하기"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/numberpicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cleanbtn"
+
+
+       ></Button>
+    <Button
+        android:id="@+id/cleanbtn"
+        android:text="초기화"
+        app:layout_constraintTop_toTopOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/numberpicker"
+        app:layout_constraintStart_toEndOf="@id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </Button>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textview1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/circle_blue"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="1">
+        </TextView>
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/textview2"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/circle_yellow"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1">
+        </TextView>
+        <TextView
+            android:background="@drawable/circle_red"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/textview3"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1">
+        </TextView>
+        <TextView
+            android:background="@drawable/circle_gray"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/textview4"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1">
+        </TextView>
+        <TextView
+            android:background="@drawable/circle_red"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/textview5"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1">
+        </TextView>
+        <TextView
+            android:background="@drawable/circle_red"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/textview6"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/runbtn"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="자동 추가"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+    ></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
